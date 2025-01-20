@@ -5,9 +5,11 @@ This is a personal portfolio website designed to showcase my projects, achieveme
 
  Features
 - Home Section: Introduction and a professional summary.
+- About section: Illustrating about myself and my research experiences and education.
 - Projects Section: Displays recent projects with images, descriptions, and live demo links.
 - Certifications Section: Lists certifications with a visually appealing layout.
 - Achievements Section: Highlights significant achievements.
+- Contact: Giving my LinkedIn and github profile as well as direct email.
 - Responsive Design: Optimized for desktops, tablets, and mobile devices.
 - Interactive Elements: Includes CSS and JavaScript animations and hover effects.
 
