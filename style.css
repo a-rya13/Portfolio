@@ -539,6 +539,7 @@ footer p {
 .certification-img {
   max-width: 50%;
   height: auto;
+  padding-left: 20%;
 }
 
 /* Achievements List */
@@ -555,6 +556,38 @@ footer p {
   margin-bottom: 20px;
 }
 
+/* Default Light Theme */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Theme Button Style */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+  z-index: 1000; /* keep above other elements */
+}
+
+#theme-toggle:hover {
+  background: #0056b3;
+}
 
 
 
