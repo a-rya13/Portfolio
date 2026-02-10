@@ -111,6 +111,16 @@
   .certification-image {
     margin-bottom: 20px;
   }
+
+  /* Dark Mode Responsive */
+  body.dark-theme .certifications-container {
+    background-color: #121212;
+  }
+
+  body.dark-theme .certifications-list li,
+  body.dark-theme .certifications-list ul li {
+    color: #cccccc;
+  }
 }
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -120,6 +130,11 @@
 
   .achievements-list {
     font-size: 16px;
+  }
+
+  /* Dark Mode Responsive */
+  body.dark-theme .achievements-list li {
+    color: #cccccc;
   }
 }
 /* Responsive Design */
@@ -135,6 +150,48 @@
 
   .image-container {
     margin-bottom: 20px;
+  }
+
+  /* Dark Mode Responsive */
+  body.dark-theme .achievements-container {
+    background-color: #121212;
+  }
+
+  body.dark-theme .achievements-list li {
+    color: #cccccc;
+  }
+}
+
+/* Additional Responsive Dark Mode Styles */
+@media screen and (max-width: 1200px) {
+  body.dark-theme .menu-links {
+    background-color: #333333;
+  }
+
+  body.dark-theme .hamburger-icon span {
+    background-color: #ffffff;
+  }
+
+  body.dark-theme .menu-links a {
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body.dark-theme .nav-links li a {
+    color: #ffffff;
+  }
+
+  body.dark-theme .nav-links li a:hover {
+    color: #cccccc;
+  }
+
+  body.dark-theme .logo {
+    color: #ffffff;
+  }
+
+  body.dark-theme .text-container p {
+    color: #cccccc;
   }
 }
 

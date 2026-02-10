@@ -569,6 +569,80 @@ body.dark-theme {
   color: #ffffff;
 }
 
+/* Dark Theme: Navigation */
+body.dark-theme a {
+  color: #ffffff;
+}
+
+body.dark-theme a:hover {
+  color: #cccccc;
+  text-decoration-color: #cccccc;
+}
+
+body.dark-theme .menu-links {
+  background-color: #333333;
+}
+
+body.dark-theme .hamburger-icon span {
+  background-color: #ffffff;
+}
+
+body.dark-theme .menu-links a {
+  color: #ffffff;
+}
+
+/* Dark Theme: Sections */
+body.dark-theme .details-container {
+  background: #333333;
+  border-color: #555555;
+}
+
+body.dark-theme .color-container {
+  background: #333333;
+  border-color: #555555;
+}
+
+body.dark-theme p {
+  color: #cccccc;
+}
+
+body.dark-theme .experience-sub-title,
+body.dark-theme .project-title {
+  color: #ffffff;
+}
+
+body.dark-theme .btn-color-1,
+body.dark-theme .btn-color-2 {
+  border-color: #555555;
+  color: #ffffff;
+}
+
+body.dark-theme .btn-color-1:hover,
+body.dark-theme .btn-color-2:hover {
+  background: #555555;
+  color: #ffffff;
+}
+
+body.dark-theme .contact-info-upper-container {
+  background: #333333;
+  border-color: #555555;
+}
+
+body.dark-theme .certifications-list li,
+body.dark-theme .achievements-list li {
+  color: #cccccc;
+}
+
+body.dark-theme .certifications-list ul li,
+body.dark-theme .achievements-list ul li {
+  color: #cccccc;
+}
+
+/* Dark Theme: Footer */
+body.dark-theme footer p {
+  color: #cccccc;
+}
+
 /* Theme Button Style */
 #theme-toggle {
   position: fixed;
@@ -585,8 +659,42 @@ body.dark-theme {
   z-index: 1000; /* keep above other elements */
 }
 
+body.dark-theme #theme-toggle {
+  background: #333333;
+  color: #ffffff;
+}
+
 #theme-toggle:hover {
   background: #0056b3;
+}
+
+body.dark-theme #theme-toggle:hover {
+  background: #555555;
+}
+
+/* Mobile Theme Toggle */
+#theme-toggle-mobile {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+body.dark-theme #theme-toggle-mobile {
+  background: #333333;
+  color: #ffffff;
+}
+
+#theme-toggle-mobile:hover {
+  background: #0056b3;
+}
+
+body.dark-theme #theme-toggle-mobile:hover {
+  background: #555555;
 }
 
 
