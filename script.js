@@ -1,5 +1,4 @@
-//HAMBURGER MENU (MOBILE)
-
+// ===== HAMBURGER MENU =====
 const hamburgerIcon = document.querySelector(".hamburger-icon");
 const menuLinks = document.querySelector(".menu-links");
 
@@ -9,7 +8,6 @@ if (hamburgerIcon && menuLinks) {
     menuLinks.classList.toggle("open");
   });
 
-  // Close menu when clicking a link
   menuLinks.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       hamburgerIcon.classList.remove("open");
@@ -18,72 +16,69 @@ if (hamburgerIcon && menuLinks) {
   });
 }
 
-//  THEME TOGGLE (DARK / LIGHT)
-
+// ===== THEME TOGGLE =====
 const desktopToggle = document.getElementById("theme-toggle");
 const mobileToggle = document.getElementById("theme-toggle-mobile");
 
-// Apply saved theme on page load
+// Apply saved theme on load
 const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const isDarkOnLoad = savedTheme === "dark" || (!savedTheme && prefersDark);
+
+if (isDarkOnLoad) {
   document.body.classList.add("dark-theme");
   updateThemeButtons(true);
 }
 
-// Toggle theme
 function toggleTheme() {
   const isDark = document.body.classList.toggle("dark-theme");
   localStorage.setItem("theme", isDark ? "dark" : "light");
-
-  // Improves browser UI consistency
   document.documentElement.style.colorScheme = isDark ? "dark" : "light";
-
   updateThemeButtons(isDark);
 }
 
-// Update button labels
 function updateThemeButtons(isDark) {
-  if (desktopToggle) {
-    desktopToggle.textContent = isDark ? "☀️" : "🌙";
-  }
-
-  if (mobileToggle) {
-    mobileToggle.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
-  }
+  if (desktopToggle) desktopToggle.textContent = isDark ? "☀️" : "🌙";
+  if (mobileToggle) mobileToggle.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
 }
 
-// Event listeners
-if (desktopToggle) {
-  desktopToggle.addEventListener("click", toggleTheme);
-}
+if (desktopToggle) desktopToggle.addEventListener("click", toggleTheme);
+if (mobileToggle) mobileToggle.addEventListener("click", toggleTheme);
 
-if (mobileToggle) {
-  mobileToggle.addEventListener("click", toggleTheme);
-}
+// ===== SCROLL REVEAL =====
+const sections = document.querySelectorAll("section:not(#profile)");
 
-// DATA-ATTRIBUTE NAVIGATION
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  { threshold: 0.06, rootMargin: "0px 0px -40px 0px" }
+);
 
-// Scroll navigation
+sections.forEach((section) => observer.observe(section));
+
+// ===== DATA-ATTRIBUTE NAVIGATION =====
 document.querySelectorAll("[data-scroll]").forEach((btn) => {
   btn.addEventListener("click", () => {
     const target = document.querySelector(btn.dataset.scroll);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
+    if (target) target.scrollIntoView({ behavior: "smooth" });
   });
 });
 
-// External links (icons)
 document.querySelectorAll("[data-link]").forEach((icon) => {
   icon.addEventListener("click", () => {
     window.open(icon.dataset.link, "_blank");
   });
 });
 
-//DOWNLOAD CV
+// ===== DOWNLOAD CV =====
 const downloadCV = document.getElementById("download-cv");
 if (downloadCV) {
   downloadCV.addEventListener("click", () => {
-    window.open("./assets/Arya_Agarwal_Developer.pdf", "_blank");
+    window.open("./assets/Arya Agarwal Resume.pdf", "_blank");
   });
 }
