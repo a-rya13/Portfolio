@@ -19,16 +19,18 @@ if (hamburgerIcon && menuLinks) {
 // ===== THEME TOGGLE =====
 const desktopToggle = document.getElementById("theme-toggle");
 const mobileToggle = document.getElementById("theme-toggle-mobile");
+const themeToggleButtons = [desktopToggle, mobileToggle].filter(Boolean);
 
-// Apply saved theme on load
 const savedTheme = localStorage.getItem("theme");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const isDarkOnLoad = savedTheme === "dark" || (!savedTheme && prefersDark);
 
 if (isDarkOnLoad) {
   document.body.classList.add("dark-theme");
-  updateThemeButtons(true);
 }
+
+document.documentElement.style.colorScheme = isDarkOnLoad ? "dark" : "light";
+updateThemeButtons(isDarkOnLoad);
 
 function toggleTheme() {
   const isDark = document.body.classList.toggle("dark-theme");
@@ -38,8 +40,19 @@ function toggleTheme() {
 }
 
 function updateThemeButtons(isDark) {
-  if (desktopToggle) desktopToggle.textContent = isDark ? "☀️" : "🌙";
-  if (mobileToggle) mobileToggle.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+  const nextModeLabel = isDark ? "Light mode" : "Dark mode";
+  const actionLabel = isDark ? "Activate light mode" : "Activate dark mode";
+
+  themeToggleButtons.forEach((button) => {
+    const text = button.querySelector(".theme-toggle__text");
+
+    if (text) {
+      text.textContent = nextModeLabel;
+    }
+
+    button.setAttribute("aria-label", actionLabel);
+    button.setAttribute("aria-pressed", String(isDark));
+  });
 }
 
 if (desktopToggle) desktopToggle.addEventListener("click", toggleTheme);
@@ -77,6 +90,7 @@ document.querySelectorAll("[data-link]").forEach((icon) => {
 
 // ===== DOWNLOAD CV =====
 const downloadCV = document.getElementById("download-cv");
+
 if (downloadCV) {
   downloadCV.addEventListener("click", () => {
     window.open("./assets/Arya Agarwal Resume.pdf", "_blank");
