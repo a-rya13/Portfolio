@@ -1,4 +1,4 @@
-/* ===== LARGE SCREENS ===== */
+/* ===== LARGE SCREENS (≤1400px) ===== */
 @media screen and (max-width: 1400px) {
   section {
     margin: 0 5rem;
@@ -12,9 +12,13 @@
     height: 320px;
     width: 320px;
   }
+
+  .work-timeline {
+    max-width: 100%;
+  }
 }
 
-/* ===== TABLET / SMALL DESKTOP ===== */
+/* ===== TABLET / SMALL DESKTOP (≤1200px) ===== */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -24,9 +28,21 @@
     display: flex;
   }
 
+  /* More links now — increase max-height for open menu */
+  .menu-links.open {
+    max-height: 520px;
+  }
+
   section {
     margin: 0 3rem;
     padding: 4rem 0 2rem;
+  }
+
+  #about,
+  #work,
+  #experience,
+  #projects {
+    padding-bottom: 4rem;
   }
 
   #profile {
@@ -65,14 +81,37 @@
 
   .section__text {
     padding: 1.75rem;
+    max-width: 100%;
+  }
+
+  /* Work cards full width on tablet */
+  .work-timeline {
+    max-width: 100%;
+    gap: 1.25rem;
+  }
+
+  .work-card {
+    padding: 1.5rem 1.75rem;
+  }
+
+  .work-card__header {
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 
-/* ===== MOBILE ===== */
+/* ===== MOBILE (≤768px) ===== */
 @media screen and (max-width: 768px) {
   section {
     margin: 0 1.5rem;
     padding: 3.5rem 0 2rem;
+  }
+
+  #about,
+  #work,
+  #experience,
+  #projects {
+    padding-bottom: 3rem;
   }
 
   .title {
@@ -97,14 +136,53 @@
     width: 240px;
   }
 
+  /* About */
   .about-containers {
     flex-direction: column;
   }
 
+  /* Skills articles full width */
   article {
     width: 100%;
   }
 
+  /* Work experience cards */
+  .work-card {
+    padding: 1.25rem 1.25rem;
+    border-left-width: 3px;
+  }
+
+  .work-card__header {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .work-card__date {
+    white-space: normal;
+  }
+
+  .work-card__company {
+    font-size: 1.05rem;
+  }
+
+  .work-card__role {
+    font-size: 0.88rem;
+  }
+
+  .work-card__points li {
+    font-size: 0.85rem;
+  }
+
+  .work-card__tags {
+    gap: 0.4rem;
+  }
+
+  .work-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.55rem;
+  }
+
+  /* Certifications */
   .certifications-container {
     flex-direction: column;
     align-items: center;
@@ -114,11 +192,13 @@
     width: 100%;
   }
 
+  /* Achievements */
   .achievements-container {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Contact */
   .contact-info-upper-container {
     flex-direction: column;
     align-items: center;
@@ -126,6 +206,7 @@
     gap: 0.5rem;
   }
 
+  /* Buttons */
   .btn-container {
     flex-wrap: wrap;
   }
@@ -135,10 +216,12 @@
     font-size: 0.85rem;
   }
 
+  /* Theme toggle */
   .theme-toggle {
     min-width: 132px;
   }
 
+  /* Footer */
   footer .nav-links {
     gap: 0.1rem;
   }
@@ -148,7 +231,7 @@
   }
 }
 
-/* ===== SMALL MOBILE ===== */
+/* ===== SMALL MOBILE (≤480px) ===== */
 @media screen and (max-width: 480px) {
   section {
     margin: 0 1rem;
@@ -187,16 +270,62 @@
     height: 150px;
   }
 
-  .achievements-list li {
-    font-size: 0.875rem;
+  /* Work cards on small phones */
+  .work-card {
+    padding: 1rem;
+    border-radius: 14px;
   }
 
+  .work-card__company {
+    font-size: 1rem;
+  }
+
+  .work-card__badge {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.5rem;
+  }
+
+  .work-card__points li {
+    font-size: 0.82rem;
+  }
+
+  /* Achievements */
+  .achievements-list li {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Certifications */
   .certifications-list {
     font-size: 0.85rem;
   }
 
+  /* Contact */
   .contact-info-container p,
   .contact-info-container a {
     font-size: 0.9rem;
+  }
+
+  /* Footer nav wraps nicely */
+  footer .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.1rem;
+  }
+
+  footer .nav-links a {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.45rem;
+  }
+
+  /* Profile buttons stack */
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 220px;
   }
 }
