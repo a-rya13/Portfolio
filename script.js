@@ -69,7 +69,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.06, rootMargin: "0px 0px -40px 0px" }
+  { threshold: 0.06, rootMargin: "0px 0px -40px 0px" },
 );
 
 sections.forEach((section) => observer.observe(section));
@@ -93,6 +93,6 @@ const downloadCV = document.getElementById("download-cv");
 
 if (downloadCV) {
   downloadCV.addEventListener("click", () => {
-    window.open("./assets/Arya Agarwal Resume.pdf", "_blank");
+    window.open("./assets/Arya Agarwal SDE.pdf", "_blank");
   });
 }

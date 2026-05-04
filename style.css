@@ -763,6 +763,16 @@ article p {
   border-color: var(--border);
 }
 
+#projects .about-containers {
+  align-items: stretch;
+  justify-content: center;
+}
+
+#projects .details-container.color-container {
+  flex: 1 1 calc(33.333% - 1rem);
+  min-width: 280px;
+}
+
 .project-btn:hover {
   color: var(--accent);
   border-color: var(--accent);
@@ -1068,6 +1078,7 @@ body.dark-theme .work-card__badge--current {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-wrap: wrap;
   padding: 0.5rem 1rem;
   border-radius: 12px;
   transition: background 0.25s ease;

@@ -98,6 +98,11 @@
     flex-direction: row;
     align-items: flex-start;
   }
+
+  #projects .details-container.color-container {
+    flex-basis: calc(50% - 0.75rem);
+    min-width: 260px;
+  }
 }
 
 /* ===== MOBILE (≤768px) ===== */
@@ -139,6 +144,10 @@
   /* About */
   .about-containers {
     flex-direction: column;
+  }
+
+  #projects .details-container.color-container {
+    min-width: 100%;
   }
 
   /* Skills articles full width */
@@ -204,6 +213,11 @@
     align-items: center;
     padding: 1.5rem;
     gap: 0.5rem;
+  }
+
+  .contact-info-container {
+    justify-content: center;
+    text-align: center;
   }
 
   /* Buttons */
@@ -319,12 +333,12 @@
   }
 
   /* Profile buttons stack */
-  .btn-container {
+  #profile .btn-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .btn {
+  #profile .btn {
     width: 100%;
     max-width: 220px;
   }
