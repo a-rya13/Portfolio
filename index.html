@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -78,7 +78,10 @@
     <!-- ================= PROFILE ================= -->
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" alt="Arya Agarwal profile picture" />
+        <img
+          src="./assets/profile-pic.jpg"
+          alt="Arya Agarwal profile picture"
+        />
       </div>
 
       <div class="section__text">
@@ -87,9 +90,7 @@
         <p class="section__text__p2">Software Developer</p>
 
         <div class="btn-container">
-          <button class="btn btn-color-2" id="download-cv">
-            Download CV
-          </button>
+          <button class="btn btn-color-2" id="download-cv">Download CV</button>
           <button class="btn btn-color-1" data-scroll="#contact">
             Contact Info
           </button>
@@ -135,13 +136,21 @@
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
               <h3>Research Experience</h3>
               <p>3+ Researches<br />Security</p>
             </div>
 
             <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
               <h3>Education</h3>
               <p>
                 MCA (VIT Vellore) 2024–26<br />
@@ -152,12 +161,19 @@
 
           <div class="text-container">
             <p>
-    Master of Computer Applications (MCA) graduate from Vellore Institute of Technology, and an undergrad Gold Medalist from Amity University. Experienced as a Software Associate Intern at DevLogix, building production-ready, scalable web applications.
-    I am deeply focused on full-stack development, turning ideas into real-world products with clean architecture and strong performance. I have hands-on experience across modern web technologies, backend systems, and database design, and have built end-to-end platforms including dashboards and management systems.
-    While I exploring and building products in cybersecurity and blockchain out of curiosity, my core strength lies in development—shipping reliable, impactful solutions. 
-
-    Driven to build, scale, and innovate in the tech space.
-
+              Master of Computer Applications (MCA) graduate from Vellore
+              Institute of Technology, and an undergrad Gold Medalist from Amity
+              University. Experienced as a Software Associate Intern at
+              DevLogix, building production-ready, scalable web applications. I
+              am deeply focused on full-stack development, turning ideas into
+              real-world products with clean architecture and strong
+              performance. I have hands-on experience across modern web
+              technologies, backend systems, and database design, and have built
+              end-to-end platforms including dashboards and management systems.
+              While I exploring and building products in cybersecurity and
+              blockchain out of curiosity, my core strength lies in
+              development—shipping reliable, impactful solutions. Driven to
+              build, scale, and innovate in the tech space.
             </p>
           </div>
         </div>
@@ -166,30 +182,70 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href = './#experience'"
       />
     </section>
-    
+
     <!-- ================= WORK EXPERIENCE ================= -->
     <section id="work">
       <p class="section__text__p1">My Professional</p>
       <h1 class="title">Work Experience</h1>
 
       <div class="work-timeline">
+        <!-- EduBloom -->
+        <div class="work-card">
+          <div class="work-card__header">
+            <div class="work-card__meta">
+              <h2 class="work-card__company">
+                EduBloom: Recruitment and Training
+              </h2>
+              <span class="work-card__badge work-card__badge--current"
+                >Former</span
+              >
+            </div>
+            <span class="work-card__date">May 2026 – Jul 2026</span>
+          </div>
+          <h3 class="work-card__role">
+            Founder's Office – Business Growth and Tech Operations Intern
+          </h3>
+          <ul class="work-card__points">
+            <li>
+              Supported business growth initiatives and technology-driven
+              operations to improve workflow efficiency and execution.
+            </li>
+            <li>
+              Designed and implemented a CRM solution for the company, writing
+              backend logic and automation scripts to streamline internal
+              processes and reduce manual effort.
+            </li>
+          </ul>
+          <div class="work-card__tags">
+            <span class="work-tag">CRM Development</span>
+            <span class="work-tag">Backend Automation</span>
+            <span class="work-tag">Business Operations</span>
+            <span class="work-tag">Process Improvement</span>
+          </div>
+        </div>
 
         <!-- DevLogix -->
         <div class="work-card">
           <div class="work-card__header">
             <div class="work-card__meta">
               <h2 class="work-card__company">DevLogix</h2>
-              <span class="work-card__badge work-card__badge--current">Former </span>
             </div>
             <span class="work-card__date">Nov 2025 – April 2026</span>
           </div>
           <h3 class="work-card__role">Software Associate</h3>
           <ul class="work-card__points">
-            <li>Contributing to end-to-end development, testing, and optimization of production-grade software modules.</li>
-            <li>Collaborating with cross-functional teams to enhance system performance, improve code quality, and deliver reliable software solutions on schedule.</li>
+            <li>
+              Contributing to end-to-end development, testing, and optimization
+              of production-grade software modules.
+            </li>
+            <li>
+              Collaborating with cross-functional teams to enhance system
+              performance, improve code quality, and deliver reliable software
+              solutions on schedule.
+            </li>
           </ul>
           <div class="work-card__tags">
             <span class="work-tag">Full-Stack</span>
@@ -209,8 +265,16 @@
           </div>
           <h3 class="work-card__role">MERN Stack Developer</h3>
           <ul class="work-card__points">
-            <li>Designed and delivered full-stack web applications for clients using the MERN stack, focusing on performance, scalability, and clean architecture.</li>
-            <li>Built responsive, production-ready platforms including user management systems and workflow automation tools tailored to client requirements.</li>
+            <li>
+              Designed and delivered full-stack web applications for clients
+              using the MERN stack, focusing on performance, scalability, and
+              clean architecture.
+            </li>
+            <li>
+              Built responsive, production-ready platforms including user
+              management systems and workflow automation tools tailored to
+              client requirements.
+            </li>
           </ul>
           <div class="work-card__tags">
             <span class="work-tag">MongoDB</span>
@@ -220,13 +284,12 @@
             <span class="work-tag">REST APIs</span>
           </div>
         </div>
-
       </div>
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href = './#experience'"
       />
     </section>
 
@@ -326,6 +389,17 @@
                   <p>Experienced</p>
                 </div>
               </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Next.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
           </div>
           <div class="details-container">
@@ -400,7 +474,7 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Databases</h2>
+            <h2 class="experience-sub-title">Databases/Tools</h2>
             <div class="article-container">
               <article>
                 <img
@@ -446,6 +520,239 @@
                   <p>Intermediate</p>
                 </div>
               </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web3</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Blockchain</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Salesforce Developer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Apex</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>LWC</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SOQL/SOSL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flows</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Process Builder</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Validation Rules</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Triggers</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Custom Objects</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sales Cloud</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Service Cloud</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Salesforce CLI</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Change Sets</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Consulting Services</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Business Process Analysis</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Requirements Gathering</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Solution Design</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Stakeholder Management</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Client Communication</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Process Improvement</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Digital Transformation</h3>
+                </div>
+              </article>
             </div>
           </div>
         </div>
@@ -454,7 +761,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href = './#projects'"
       />
     </section>
     <section id="projects">
@@ -465,22 +772,29 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
-                alt="Home-Stay project"
+                src="./assets/project-3.png"
+                alt="ShopSphere project"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Home-Stay</h2>
+            <h2 class="experience-sub-title project-title">
+              ShopShere-An E-commerce Project
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/Home-Stay'"
+                onclick="
+                  location.href =
+                    'https://github.com/a-rya13/Agarwal-Gift-Greetings/tree/main/agarwal-gift'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/Home-Stay'"
+                onclick="
+                  location.href = 'https://github.com/a-rya13/Mentor_Dashboard'
+                "
               >
                 Live Demo
               </button>
@@ -494,17 +808,23 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Hospital Information System</h2>
+            <h2 class="experience-sub-title project-title">
+              Hospital Information System
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13?tab=repositories'"
+                onclick="
+                  location.href = 'https://github.com/a-rya13?tab=repositories'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13?tab=repositories'"
+                onclick="
+                  location.href = 'https://github.com/a-rya13?tab=repositories'
+                "
               >
                 Live Demo
               </button>
@@ -513,22 +833,22 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
-                alt="Mentorship Dashboard project"
+                src="./assets/project-1.png"
+                alt="Home-Stay project"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Mentorship Dashboard</h2>
+            <h2 class="experience-sub-title project-title">Home-Stay</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/Mentor_Dashboard'"
+                onclick="location.href = 'https://github.com/a-rya13/Home-Stay'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/Mentor_Dashboard'"
+                onclick="location.href = 'https://github.com/a-rya13/Home-Stay'"
               >
                 Live Demo
               </button>
@@ -546,17 +866,25 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Shopping Mall Management System</h2>
+            <h2 class="experience-sub-title project-title">
+              Shopping Mall Management System
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/codeathon/tree/main/hackathon'"
+                onclick="
+                  location.href =
+                    'https://github.com/a-rya13/codeathon/tree/main/hackathon'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/codeathon/tree/main/hackathon '"
+                onclick="
+                  location.href =
+                    'https://github.com/a-rya13/codeathon/tree/main/hackathon '
+                "
               >
                 Live Demo
               </button>
@@ -570,17 +898,25 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Network Traffic Analysis using Deep Learning Approaches</h2>
+            <h2 class="experience-sub-title project-title">
+              Network Traffic Analysis using Deep Learning Approaches
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/Network-traffic-Analysis-using-Deep-learning'"
+                onclick="
+                  location.href =
+                    'https://github.com/a-rya13/Network-traffic-Analysis-using-Deep-learning'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/Network-traffic-Analysis-using-Deep-learning'"
+                onclick="
+                  location.href =
+                    'https://github.com/a-rya13/Network-traffic-Analysis-using-Deep-learning'
+                "
               >
                 Live Demo
               </button>
@@ -594,17 +930,26 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">TransactSafe: Blockchain Powered Escrow System for Freelance Payments</h2>
+            <h2 class="experience-sub-title project-title">
+              TransactSafe: Blockchain Powered Escrow System for Freelance
+              Payments
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/Smart-Blockchain-powered-Escrow-System'"
+                onclick="
+                  location.href =
+                    'https://github.com/a-rya13/Smart-Blockchain-powered-Escrow-System'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/Smart-Blockchain-powered-Escrow-System'"
+                onclick="
+                  location.href =
+                    'https://github.com/a-rya13/Smart-Blockchain-powered-Escrow-System'
+                "
               >
                 Live Demo
               </button>
@@ -622,17 +967,23 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Bulk Email Sender Web Application</h2>
+            <h2 class="experience-sub-title project-title">
+              Bulk Email Sender Web Application
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/ProjectEmail'"
+                onclick="
+                  location.href = 'https://github.com/a-rya13/ProjectEmail'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://email-sending-bulk.netlify.app/'"
+                onclick="
+                  location.href = 'https://email-sending-bulk.netlify.app/'
+                "
               >
                 Live Demo
               </button>
@@ -646,17 +997,23 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Smart Contracts and DApp Development</h2>
+            <h2 class="experience-sub-title project-title">
+              Smart Contracts and DApp Development
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/Smart-contracts'"
+                onclick="
+                  location.href = 'https://github.com/a-rya13/Smart-contracts'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/a-rya13/Smart-contracts'"
+                onclick="
+                  location.href = 'https://github.com/a-rya13/Smart-contracts'
+                "
               >
                 Live Demo
               </button>
@@ -670,17 +1027,25 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Online Examination and Result System</h2>
+            <h2 class="experience-sub-title project-title">
+              Online Examination and Result System
+            </h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/beKanishk/Online-Examination-System'"
+                onclick="
+                  location.href =
+                    'https://github.com/beKanishk/Online-Examination-System'
+                "
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/beKanishk/Online-Examination-System'"
+                onclick="
+                  location.href =
+                    'https://github.com/beKanishk/Online-Examination-System'
+                "
               >
                 Live Demo
               </button>
@@ -692,7 +1057,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href = './#contact'"
       />
     </section>
     <section id="certifications">
@@ -707,7 +1072,7 @@
             class="certification-img"
           />
         </div>
-    
+
         <!-- Second Section: First Half of Certificates -->
         <div class="certification-list-section">
           <ul class="certifications-list">
@@ -720,10 +1085,12 @@
             </li>
             <li><b>Ethical Hacking Essentials (EHE)</b></li>
             <li><b>'A' Certificate in NCC (5 U.P. AIR SQN NCC)</b></li>
-            <li><b>CISCO NETACAD Certified in ITN Introduction to Networks</b></li>
+            <li>
+              <b>CISCO NETACAD Certified in ITN Introduction to Networks</b>
+            </li>
           </ul>
         </div>
-    
+
         <!-- Third Section: Second Half of Certificates -->
         <div class="certification-list-section">
           <ul class="certifications-list">
@@ -769,7 +1136,7 @@
         </ul>
       </div>
     </section>
-    
+
     <!-- ================= CONTACT ================= -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>

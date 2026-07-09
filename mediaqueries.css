@@ -67,6 +67,10 @@
     flex-wrap: wrap;
   }
 
+  #experience .about-containers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .arrow {
     display: none;
   }
@@ -144,6 +148,10 @@
   /* About */
   .about-containers {
     flex-direction: column;
+  }
+
+  #experience .about-containers {
+    grid-template-columns: 1fr;
   }
 
   #projects .details-container.color-container {

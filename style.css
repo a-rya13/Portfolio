@@ -663,6 +663,16 @@ section {
   gap: 1.5rem;
 }
 
+#experience .about-containers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+}
+
+#experience .details-container {
+  min-width: 0;
+}
+
 .experience-sub-title {
   font-size: 1.4rem;
   font-weight: 600;
@@ -701,10 +711,16 @@ article .icon {
   flex-shrink: 0;
 }
 
+article > div {
+  min-width: 0;
+}
+
 article h3 {
   font-size: 0.9rem;
   font-weight: 600;
   margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 article p {
