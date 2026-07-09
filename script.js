@@ -93,6 +93,9 @@ const downloadCV = document.getElementById("download-cv");
 
 if (downloadCV) {
   downloadCV.addEventListener("click", () => {
-    window.open("./assets/Arya Agarwal SDE.pdf", "_blank");
+    const link = document.createElement("a");
+    link.href = "./assets/Arya Agarwal SDE.pdf";
+    link.download = "Arya Agarwal SDE.pdf";
+    link.click();
   });
 }
